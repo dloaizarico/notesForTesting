@@ -5,8 +5,7 @@ backend:
       commands:
         - '# Execute Amplify CLI with the helper script'
         - eval "$(ssh-agent -s)"
-        - ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-        - ssh-add <(echo "$DEPLOY_KEY" | base64 -d)
+        - git config --global url."https://${DEPLOY_KEY}@github.com"
         - yarn install
         - amplifyPush --simple
 frontend:
