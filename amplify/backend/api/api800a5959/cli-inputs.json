@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/getDAta": {
+      "name": "/getDAta",
+      "lambdaFunction": "notes22641898",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

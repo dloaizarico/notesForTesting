@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { API } from 'aws-amplify';
 
 function App() {
+  const callLambda = async() =>{
+    return await API.put("api800a5959", "/getDAta", {});
+  }
+  callLambda();
   return (
     <div className="App">
       <header className="App-header">
