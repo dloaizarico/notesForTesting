@@ -6,6 +6,6 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92",
-    "@elastik/elastik-fuzzy-name-matching": "git+https://github.com/best-performance/fuzzyNameMatching.git#semver:^1.0.0"
+    "@elastik/elastik-fuzzy-name-matching": "git+ssh://git@github.com/best-performance/fuzzyNameMatching.git#semver:^1.0.0"
   }
 }
